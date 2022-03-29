@@ -1,0 +1,25 @@
+#box1,
+#box2,
+#box3,
+#box4 {
+  color: white;
+  border: 1px solid white;
+  background-color: darkslategrey;
+  width: 250px;
+  float: left;
+}
+
+@media (max-width: 800px) {
+  #box1,
+  #box2,
+  #box3,
+  #box4 {
+    clear: both;
+  }
+}
+/* 
+@media (max-width: 400px) {
+  body {
+    float: right;
+  }
+} */

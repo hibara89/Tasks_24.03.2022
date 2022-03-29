@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flea Navbar</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      header {
+      }
+
+      .flex-navbar {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: flex-end; */
+
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Courier New", Courier, monospace;
+        background-color: gray;
+        border: 1px solid black;
+        color: #333;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+      }
+
+      ul li {
+        padding-left: 20px;
+      }
+
+      @media (max-width: 600px) {
+        .flex-navbar {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        ul {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="flex-navbar">
+        <h3>APPLESEEDS</h3>
+        <ul>
+          <li id="item1">Home</li>
+          <li id="item2">About</li>
+          <li id="item3">Portfolio</li>
+          <li id="item4">Contact</li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

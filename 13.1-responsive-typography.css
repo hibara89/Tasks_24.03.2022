@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: aqua;
+}
+
+@media (min-width: 0px) {
+  h1 {
+    font-size: 4vw;
+  }
+}
