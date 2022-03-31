@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation-navbar</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        /* align-items: center; */
+        justify-content: center;
+        /* animation: anim1 4s; */
+      }
+
+      li {
+        background-color: aqua;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        transition: border-bottom 3s;
+      }
+
+      li:hover {
+        transform: rotate(45deg);
+      }
+
+      /* li:hover {
+        transform: translateX(30px);
+      } */
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </body>
+</html>
