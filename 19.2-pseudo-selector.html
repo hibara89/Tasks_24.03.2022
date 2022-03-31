@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo selector animation</title>
+    <style>
+      body {
+        background: darkkhaki;
+
+        height: 100vh;
+      }
+
+      .box {
+        background-color: aqua;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        transition: all 3s;
+      }
+
+      .box::after {
+        content: "";
+        background-color: green;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        transform: translateX(200px);
+        transition: all 5s;
+      }
+
+      @keyframes animate1 {
+        25% {
+          background: red;
+        }
+        50% {
+          background: pink;
+        }
+
+        75% {
+          background: blue;
+        }
+
+        100% {
+          background: white;
+        }
+      }
+
+      .box:hover::after {
+        animation: animate1 5s;
+        width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
