@@ -1,0 +1,41 @@
+<!-- //simple ajax call with fetch using this url “https://api.jokes.one/jod” -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple fitch</title>
+</head>
+<body>
+
+  <button id="getJoke">Get The Joke</button>
+  <div id="output"></div>
+  <script>
+ 
+
+    document.getElementById("getJoke").addEventListener("click", getJoke);
+
+
+    function getJoke() {
+      fetch("https://api.jokes.one/jod")
+        .then((response) => response.json())
+        .then((data) => {
+      
+            output = `
+              <h3>${data.contents.jokes[0].joke.title}</h3>
+              <p>${data.contents.jokes[0].joke.text}</p>
+    `;
+          });
+          document.getElementById("output").innerHTML = output;
+        };
+  
+
+
+  </script>
+
+<body>
+  
+</body>
+</html>
