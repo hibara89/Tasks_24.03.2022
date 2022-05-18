@@ -9,10 +9,11 @@ function card(props) {
         margin: "auto",
         backgroundColor: props.color,
         display: "inline-block",
+        marginTop: "20px",
         marginRight: "20px",
       }}
     >
-      <img alt="random" />
+      <img alt="random" src={props.source} />
       <h1>{props.title}</h1>
       <p>{props.description}</p>
       <a href="#">Share</a>
@@ -34,16 +35,19 @@ export class Exc4_2 extends React.Component {
             color: "red",
             title: "Welcome",
             description: "This awesome place",
+            source: "https://picsum.photos/300/200?random=1",
           })}
           {card({
             color: "lightgreen",
             title: "Hey everyone",
-            description: "This awesome place",
+            description: "This great place",
+            source: "https://picsum.photos/300/200?random=2",
           })}
           {card({
             color: "aqua",
             title: "Dear all",
-            description: "This awesome place",
+            description: "This phenomenal place",
+            source: "https://picsum.photos/300/200?random=3",
           })}
         </div>
       </div>
