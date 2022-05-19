@@ -11,6 +11,9 @@ import { Exc81 } from "./components/Exc8_1";
 import { Exc82 } from "./components/Exc8_2";
 import { Exc83 } from "./components/Exc8_3";
 import { Spinner } from "./components/Exc9_1";
+import { Exc11 } from "./components/Exc11_1";
+import { Exc112 } from "./components/exc11_2";
+import AppCar from "./components/App_car";
 
 class App extends React.Component {
   render() {
@@ -27,7 +30,10 @@ class App extends React.Component {
         {/* {<Exc81 />} */}
         {/* {<Exc82 />} */}
         {/* {<Exc83 />} */}
-        {<Spinner />}
+        {/* {<Spinner />} */}
+        {/* {<Exc11 />} */}
+        {<Exc112 />}
+        {/* {<AppCar />} */}
       </div>
     );
   }
