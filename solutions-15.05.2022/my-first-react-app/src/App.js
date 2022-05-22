@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import { Exc2_1 } from "./components/Exc2_1";
 import { Exc2_2 } from "./components/Exc2_2";
 import { Exc3_1 } from "./components/Exc3_1";
@@ -13,6 +14,9 @@ import { Exc83 } from "./components/Exc8_3";
 import { Spinner } from "./components/Exc9_1";
 import { Exc11 } from "./components/Exc11_1";
 import { Exc112 } from "./components/exc11_2";
+import { Exc121 } from "./components/22.05.2022/Exc12_1";
+import { Exc131 } from "./components/22.05.2022/Exc13_1";
+import { Exc132 } from "./components/22.05.2022/Exc13_2";
 import AppCar from "./components/App_car";
 
 class App extends React.Component {
@@ -32,7 +36,9 @@ class App extends React.Component {
         {/* {<Exc83 />} */}
         {/* {<Spinner />} */}
         {/* {<Exc11 />} */}
-        {<Exc112 />}
+        {/* {<Exc112 />} */}
+        {<Exc121 />}
+        {/* {<Exc131 />} */}
         {/* {<AppCar />} */}
       </div>
     );
