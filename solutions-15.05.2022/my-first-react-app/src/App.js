@@ -18,6 +18,9 @@ import { Exc121 } from "./components/22.05.2022/Exc12_1";
 import { Exc131 } from "./components/22.05.2022/Exc13_1";
 import { Exc132 } from "./components/22.05.2022/Exc13_2";
 import AppCar from "./components/App_car";
+import { Noth } from "./components/22.05.2022/noth";
+import { Exc141 } from "./components/23.05.2022/Exc14_1";
+import { Exc142 } from "./components/23.05.2022/Exc14_2";
 
 class App extends React.Component {
   render() {
@@ -37,9 +40,12 @@ class App extends React.Component {
         {/* {<Spinner />} */}
         {/* {<Exc11 />} */}
         {/* {<Exc112 />} */}
-        {<Exc121 />}
+        {/* {<Exc121 />} */}
         {/* {<Exc131 />} */}
         {/* {<AppCar />} */}
+        {/* {<Noth />} */}
+        {/* {<Exc141 />} */}
+        {<Exc142 />}
       </div>
     );
   }
