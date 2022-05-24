@@ -20,7 +20,8 @@ import { Exc132 } from "./components/22.05.2022/Exc13_2";
 import AppCar from "./components/App_car";
 import { Noth } from "./components/22.05.2022/noth";
 import { Exc141 } from "./components/23.05.2022/Exc14_1";
-import { Exc142 } from "./components/23.05.2022/Exc14_2";
+
+import App11 from "./components/section11-codeAlong/Ap";
 
 class App extends React.Component {
   render() {
@@ -45,7 +46,8 @@ class App extends React.Component {
         {/* {<AppCar />} */}
         {/* {<Noth />} */}
         {/* {<Exc141 />} */}
-        {<Exc142 />}
+
+        {/* {<App11 />} */}
       </div>
     );
   }

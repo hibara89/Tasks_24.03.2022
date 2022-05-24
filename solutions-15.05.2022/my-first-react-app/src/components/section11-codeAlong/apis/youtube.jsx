@@ -1,0 +1,14 @@
+import React from "react";
+import axios from "axios";
+
+const KEY = "AIzaSyBf-mBYkmKoyfGEBInvrtMxeZuMQBQGiho";
+
+export default axios.create({
+  baseURL: "https://www.googleapis.com/youtube/v3",
+  params: {
+    part: "snippet",
+    type: "video",
+    maxResults: 5,
+    Key: KEY,
+  },
+});
