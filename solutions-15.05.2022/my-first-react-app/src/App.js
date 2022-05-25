@@ -25,6 +25,7 @@ import App11 from "./components/section11-codeAlong/Ap";
 
 import AppNav from "./components/navigation/appnav";
 import Ecommerce from "./components/24.05.2022/App-ecommerce";
+import TodoList from "./components/25.05-ToDo/TodoList";
 
 class App extends React.Component {
   render() {
@@ -52,7 +53,8 @@ class App extends React.Component {
         {/* {<App11 />} */}
         {/* {<Products />} */}
         {/* {<AppNav />} */}
-        {<Ecommerce />}
+        {/* {<Ecommerce />} */}
+        {<TodoList />}
       </div>
     );
   }
