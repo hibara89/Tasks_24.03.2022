@@ -23,6 +23,9 @@ import { Exc141 } from "./components/23.05.2022/Exc14_1";
 
 import App11 from "./components/section11-codeAlong/Ap";
 
+import AppNav from "./components/navigation/appnav";
+import Ecommerce from "./components/24.05.2022/App-ecommerce";
+
 class App extends React.Component {
   render() {
     return (
@@ -46,8 +49,10 @@ class App extends React.Component {
         {/* {<AppCar />} */}
         {/* {<Noth />} */}
         {/* {<Exc141 />} */}
-
         {/* {<App11 />} */}
+        {/* {<Products />} */}
+        {/* {<AppNav />} */}
+        {<Ecommerce />}
       </div>
     );
   }
