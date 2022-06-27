@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 mongoose.connect(
-  "mongodb+srv://hiba:hib1mar2@cluster0.jt76s.mongodb.net/mearntutorial?retryWrites=true&w=majority",
+  "mongodb+srv://hiba:<password>@cluster0.jt76s.mongodb.net/mearntutorial?retryWrites=true&w=majority",
   () => {
     console.log("mongoose");
   }
